@@ -95,7 +95,7 @@ RUN mkdir -p resources /data \
   && rm -rf /var/lib/apt/lists/* \
   && npm install && echo ${CONTAINER_VERSION} > image_version.txt
 
-# VOLUME ["/data"]
+VOLUME ["/data"]
 # HTTP Server
 EXPOSE 30000/TCP
 # TURN Server
