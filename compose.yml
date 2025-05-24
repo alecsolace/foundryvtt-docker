@@ -3,6 +3,7 @@ services:
   foundry:
     image: felddy/foundryvtt:release
     hostname: my_foundry_host
+    user: 421:421
     volumes:
       - type: bind
         source: ./data
